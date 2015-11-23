@@ -52,6 +52,14 @@ php artisan vendor:publish
 ```
 Finaly, enjoy :3
 
+## Configure on Lumen
+Set configure into `app/bootstrap.php`:
+```php
+$app->configure('hisorange/browser-detect/browser-detect-config');
+$app->configure('hisorange/browser-detect/browser-detect-plugins');
+```
+Then using `config('hisorange/browser-detect/browser-detect-config');`
+
 ## Built in plugins
 ***
 The package ships with multiple built in plugin and one native api connector to gather the most accurate informations, but you can simple add your own solution by adding a simple line to the plugin config file. Here is the built in plugins list.
