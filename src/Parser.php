@@ -4,7 +4,7 @@ namespace hisorange\BrowserDetect;
 use hisorange\Traits\RunTimeCache;
 use hisorange\Traits\ObjectConfig;
 use hisorange\Traits\PluginCollection;
-use Illuminate\Foundation\Application;
+use Laravel\Lumen\Application;
 
 class Parser {
 
@@ -16,7 +16,7 @@ class Parser {
 	/**
 	 * @since 1.0.0 Store the application on the object.
 	 *
-	 * @var \Illuminate\Foundation\Application
+	 * @var \Laravel\Lumen\Application
 	 */
 	protected $app;
 
@@ -65,7 +65,7 @@ class Parser {
 	/**
 	 * @since 1.0.0 Initialization excepts the Application.
 	 *
-	 * @param  \Illuminate\Foundation\Application $app
+	 * @param  \Laravel\Lumen\Application $app
 	 * @return void
 	 */
 	public function __construct(Application $app)
