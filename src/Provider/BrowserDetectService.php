@@ -45,7 +45,7 @@ class BrowserDetectService extends ServiceProvider {
 	 */
 	public function registerParser()
 	{
-		$this->app['browser-detect.parser']	= $this->app->singleton(Parser::class, function($app) {
+		$this->app->singleton(Parser::class, function($app) {
 			return new Parser($app);
 		});
 	}
